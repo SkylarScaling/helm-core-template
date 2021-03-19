@@ -1,0 +1,14 @@
+{{- define "core-template.namespace.tpl" -}}
+# This is the namespace for the app
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: {{ .Values.appName }}
+  labels:
+    app: {{ .Values.appName }}
+    # This label enables apps to make API calls to the shared Auth service.
+    caffeine-auth: 'true'
+{{- end -}}
+{{- define "core-template.namespace" -}}
+{{- include "core-template.util.merge" (append . "core-template.namespace.tpl") -}}
+{{- end -}}
