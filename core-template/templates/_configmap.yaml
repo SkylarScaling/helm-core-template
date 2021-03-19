@@ -3,7 +3,7 @@ apiVersion: v1
 kind: ConfigMap
 metadata:
   name: {{ .Release.Name | printf "%s-%s" .Chart.Name }}
-  namespace: {{ .Values.app-name }}
+  namespace: {{ .Values.appName }}
 data: {}
 {{- end -}}
 {{- define "core-template.configmap" -}}
