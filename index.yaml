@@ -1,0 +1,14 @@
+apiVersion: v1
+entries:
+  core-template:
+  - apiVersion: v2
+    appVersion: 1.16.0
+    created: "2021-03-19T12:48:43.014023432-06:00"
+    description: A Helm chart for Kubernetes
+    digest: df4a37d2163d96dbb9508e9c0e44fb5deaa498ba80c264af9f49fcebe199256d
+    name: core-template
+    type: library
+    urls:
+    - core-template-0.1.0.tgz
+    version: 0.1.0
+generated: "2021-03-19T12:48:43.013748148-06:00"
